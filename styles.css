@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.error {
+  color: red;
+}
+
+hr {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  background: #ccc;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 5rem;
+  display: flex;
+}
+
+.cart {
+  width: 30%;
+  border-right: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.shop {
+  padding: 1rem;
+  max-width: calc(1000px - 30%);
+}
+
+.products {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.products li {
+  border: 1px solid #eee;
+  padding: 0.5rem;
+  /* margin-right: 0.5rem;
+  margin-bottom: 0.5rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  max-width: 200px;
+}
+
+.products li:hover {
+  cursor: pointer;
+  background: #eee;
+  transition: background-color 0.3s;
+}
+
+.products li img {
+  max-width: 100%;
+}
+
+.filter {
+  margin-bottom: 1rem;
+  border: 1px solid #eee;
+  width: 80%;
+  padding: 0.5rem 1rem;
+}
+
+.cart-list {
+  list-style: none;
+}
+
+.cart-list li {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+
+.cart-list li:hover {
+  background: #eee;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.clear {
+  padding: 0.5rem 1rem;
+  background: darkred;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.clear:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*     Адаптитвност      */
+@media (max-width: 767px) {
+  .container {
+    max-width: 600px;
+  }
+  .products li {
+    width: 100%;
+    max-width: 100%;
+  }
+  .shop {
+    padding: 1rem;
+    max-width: calc(600px - 30%);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 400px;
+  }
+  .shop {
+    padding: 1rem;
+    max-width: calc(400px - 30%);
+  }
+}
