@@ -24,7 +24,7 @@ productsContainer.addEventListener("click", (event) => {
 
 cartContainer.addEventListener("click", (event) => {
   const type = event.target?.dataset.type;
-  const id = event.target?.dataset.id;
+  const id = event.target.closest("li")?.dataset.id;
 
   switch (type) {
     case "clear":
@@ -33,6 +33,10 @@ cartContainer.addEventListener("click", (event) => {
       break;
     case "remove":
       cartService.remove(id);
+      renderCart();
+      break;
+    case "increment":
+      cartService.increment(id);
       renderCart();
       break;
   }
