@@ -24,7 +24,9 @@ class HTMLService {
   paintCartItem(item) {
     return `
       <li data-type="remove" data-id="${item.id}">
+      <span class="change-count">-</span>
         (${item.amount}) 
+        <span class="change-count">+</span>
         ${item.title}
         <strong>$${item.price}</strong>
       </li>

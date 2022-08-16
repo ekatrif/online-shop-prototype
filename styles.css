@@ -88,11 +88,11 @@ hr {
   padding: 0.5rem;
 }
 
-.cart-list li:hover {
+/* .cart-list li:hover {
   background: #eee;
   transition: all 0.3s;
   cursor: pointer;
-}
+} */
 
 .clear {
   padding: 0.5rem 1rem;
@@ -127,6 +127,20 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.change-count {
+  display: inline-block;
+  padding: 3px 6px;
+  border-radius: 3px;
+  background-color: lightcoral;
+}
+.change-count:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  background-color: red;
+  color: #fff;
+  transition: opacity 0.3s, color 0.3s, background-color 0.3s;
 }
 
 /*     Адаптитвност      */
