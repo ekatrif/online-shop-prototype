@@ -115,6 +115,16 @@ hr {
 }
 
 /*     Адаптитвност      */
+@media (max-width: 1000px) {
+  .info {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .info span {
+    width: 100%;
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     max-width: 600px;
