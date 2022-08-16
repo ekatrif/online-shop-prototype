@@ -12,6 +12,7 @@ class HTMLService {
         <img src="${product.image}" title="${product.title}" /> 
         <small>${ellipsis(product.title, 50)}</small>
         <small><strong>$${product.price}</strong></small>
+        <button class="buy" data-type="buy">Купить</button>
       </li>
     `;
   }

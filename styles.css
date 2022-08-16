@@ -96,7 +96,7 @@ hr {
 
 .clear {
   padding: 0.5rem 1rem;
-  background: darkred;
+  background: red;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -106,6 +106,21 @@ hr {
 .clear:hover {
   opacity: 0.8;
   transition: opacity 0.3s;
+}
+
+.buy {
+  padding: 0.5rem 1rem;
+  background-color: lightcoral;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buy:hover {
+  opacity: 0.8;
+  background-color: red;
+  transition: opacity 0.3s, background-color 0.3s;
 }
 
 .info {
